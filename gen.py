@@ -25,7 +25,7 @@ def crop_center(img, target_width=960, target_height=720):
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--num_workers', type=int, default=0, help='workers for dataloader')
-parser.add_argument('--pre_trained', type=str, default='snapshots/PairsStreetView/ckpt/model_140.pth',
+parser.add_argument('--pre_trained', type=str, default='snapshots/PairsStreetView/ckpt/model_100.pth',
                     help='pre-trained models for fine-tuning') #根据需求调整
 parser.add_argument('--batch_size', type=int, default=1, help='batch size')
 parser.add_argument('--load_size', type=int, default=350, help='image loading size') #不用管没用
