@@ -41,3 +41,8 @@ python eval.py \
     --image_root [path to input image directory] \ 
     --mask_root [path to masks directory]
 ```
+
+### 去标记流程
+1. 使用data文件夹内的clipper.py对原图进行裁剪，裁剪后的尺寸为960*720，可根据需求调整裁剪框的位置，但尺寸固定。
+2. 使用data文件夹内的gen_mask.py文件对原图进行mask生成
+3. 调用gen.py文件进行补绘
